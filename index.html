@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <picture>
+      <source media="(min-width: 1400px)" srcset="./img/big.jpg" />
+      <source media="(min-width: 700px)" srcset="./img/mid.jpg" />
+      <source media="(min-width: 450px)" srcset="./img/small.jpg" />
+      <source srcset="./img/default2.jpg" />
+      <img src="./img/fallback.jpg" alt="img" />
+    </picture>
+  </body>
+</html>
